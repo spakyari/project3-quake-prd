@@ -20,62 +20,29 @@
 
   <nav>
     <ul class = "large_nav">
-        <li style="float:left"> <a  class="alti-logo" href="index.html"> Immigrants Distribution</a></li>
-
-        <!-- <li class="full dropdown">
-          <a href="#" class="dropbtn"><i>Other Plots</i>
-          </a>
-          <div class="dropdown-content">
-              <a href="./demographics.html">Demographics</a>
-              <a href="./Diversity.html">Diversity</a>
-          </div>
-        </li> -->
+        <li style="float:left"> <a  class="alti-logo" href="index.html"> Past Earthquakes</a></li>
     
         <li class="interact">
 
-          <label for="Region">Region</label>
-          <select name="region" class="drop-down" id="region">
+          <label for="Date">Date:</label>
+          <input type="date" id="date" name="date">
 
-          </select>
+          <label for="city">City</label>
+          <select name="city" class="drop-down" id="city">
 
-          <label for="Country">Country</label>
-          <select name="country" class="drop-down" id="country">
+            </select>
 
-          </select>
+            <label for="Magnitude">Magnitude</label>
+            <select name="magnitude" class="drop-down" id="magnitude">
 
-          <label for="Year">Year</label>
-          <select name="year" class="drop-down" id="year">
-
-          </select>
-
-          <label for="Top">Top</label>
-          <Input name="top" class="drop-down" id="top" value="All">
-
-          <label for="By">By</label>
-          <select name="by" class="drop-down" id="by">
-
-          </select>
-
-
+            </select>
 
         </li>
-
-        <!-- <div class="mini dropdown">
-            <a href="#" class="dropbtn"><i class="fa fa-bars"></i>
-                </a>
-            <div class="dropdown-content">
-                <a href="maxtemp.html">s. Max Temperature</a>
-                <a href="humidity.html">vs. Humidity</a>
-                <a href="cloudiness.html">vs. Cloudiness</a>
-                <a href="windspeed.html">vs. Wind Speed</a>
-                <a href="data.html">Data</a> 
-                <a href="comparison.html">Comparison</a>
-            </div>
-        </div> -->
 
     </ul>   
 
 </nav>
+
 
   <!-- The div that holds our map -->
   <div id="mapid"></div>

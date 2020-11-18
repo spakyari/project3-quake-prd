@@ -11,10 +11,10 @@ body {
   
   .legend {
     line-height: 20px;
-    color: #555;
+    color: rgb(8, 8, 8);
     padding: 10px;
-    background-color: white;
-    border-radius: 5px;
+    background-color: rgb(248, 241, 241);
+    border-radius: 10px;
   }
   .legend i {
     width: 18px;
@@ -23,3 +23,99 @@ body {
     margin-right: 8px;
     opacity: 0.7;
   }
+
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  
+
+  body,
+  html
+ {
+    height: 100%;
+  }
+
+  #map 
+  {
+
+    height: 100%;
+
+  }
+
+  /* Navbar styles */
+
+.large_screen {
+
+  visibility: visible;
+
+}
+
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(248, 242, 242);
+}
+
+nav li {
+  float: right;
+}
+
+nav li a, .dropbtn {
+  display: inline-block;
+  color: rgb(248, 242, 242);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover, .dropdown:hover .dropbtn {
+  background-color: #f5ecec;
+  color:rgb(8, 7, 7);
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1e7e7;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgb(255, 255, 255);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #4aaaa5;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.alti-logo {
+  background-color: #efeff7;
+  color:rgb(12, 11, 11);
+  font-size: 24px;
+}
+
+.mini  {
+  
+  visibility: hidden;
+}
+
+.full {
+  visibility: visible;
+}
+

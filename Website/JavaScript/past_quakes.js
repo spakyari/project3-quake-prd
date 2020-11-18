@@ -1,6 +1,6 @@
 var myMap = L.map("mapid", {
-  center: [40, -95],
-  zoom: 5
+  center: [37, -115],
+  zoom: 7
 });
 
 // Adding tile layer
@@ -14,11 +14,10 @@ L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 }).addTo(myMap);
 
 // Use this link to get the geojson data.
-var link = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson";
+var link = 'https://earthquake.usgs.gov/fdsnws/event/1/query.geojson?starttime=2020-11-11%2000:00:00&endtime=2020-11-18%2023:59:59&maxlatitude=41.961&minlatitude=32.813&maxlongitude=-114.521&minlongitude=-124.255&minmagnitude=2.5&orderby=time';
+
 
 // Function that will determine the color based on the depth of an earthquake
-
-
 
 function chooseColor(depth) {
   switch (true) {
@@ -87,3 +86,6 @@ legend.onAdd = function() {
 };
 
 legend.addTo(myMap);
+
+
+

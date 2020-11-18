@@ -18,6 +18,32 @@
 
 <body>
 
+  <nav>
+    <ul class = "large_nav">
+        <li style="float:left"> <a  class="alti-logo" href="index.html"> Future Earthquakes</a></li>
+    
+        <li class="interact">
+
+          <label for="Date">Date:</label>
+          <input type="date" id="date" name="date">
+
+          <label for="city">City</label>
+          <select name="city" class="drop-down" id="city">
+
+            </select>
+
+            <label for="Magnitude">Magnitude</label>
+            <select name="magnitude" class="drop-down" id="magnitude">
+
+            </select>
+
+        </li>
+
+    </ul>   
+
+</nav>
+
+
   <!-- The div that holds our map -->
   <div id="mapid"></div>
 
@@ -30,7 +56,7 @@
   <!-- API key -->
   <script type="text/javascript" src="config.js"></script>
   <!-- Our JavaScript -->
-  <script type="text/javascript" src="future_quakes.js"></script>
+  <script type="text/javascript" src="past_quakes.js"></script>
 </body>
 
 </html>
