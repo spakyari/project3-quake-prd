@@ -1,4 +1,4 @@
-var myMap1 = L.map("mapid1", {
+var myMap2 = L.map("mapid2", {
   center: [33, -118],
   zoom: 6
 });
@@ -54,9 +54,9 @@ function chooseColor(depth) {
 // Adding tile layer
 function refreshMap(){
 
-  myMap1.eachLayer(function (layer) {
+  myMap2.eachLayer(function (layer) {
       
-    myMap1.removeLayer(layer)
+    myMap2.removeLayer(layer)
 });
 
   
@@ -67,7 +67,7 @@ function refreshMap(){
     zoomOffset: -1,
     id: "mapbox/streets-v11",
     accessToken: API_KEY
-  }).addTo(myMap1);
+  }).addTo(myMap2);
 
 
 
@@ -102,7 +102,7 @@ function refreshMap(){
     }
       
       
-  }).addTo(myMap1);
+  }).addTo(myMap2);
   });
 
 }
@@ -126,3 +126,5 @@ function refreshMap(){
 // };
 
 // legend.addTo(myMap1);
+
+

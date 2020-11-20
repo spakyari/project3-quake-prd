@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Leaflet Step-1</title>
+  <title>Predictions</title>
 
   <!-- Leaflet CSS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
@@ -20,20 +20,12 @@
 
   <nav>
     <ul class = "large_nav">
-        <li style="float:left"> <a  class="alti-logo" href="index.html"> Past Earthquakes</a></li>
+        <li style="float:left"> <a  class="alti-logo" href="index.html"> Predictions</a></li>
     
         <li class="interact">
 
           <label for="Date">Date:</label>
-          <input type="date" id="date" name="date">
-
-          <label for="city">City</label>
-          <select name="city" class="drop-down" id="city">
-
-            </select>
-
-            <label for="Magnitude">Magnitude</label>
-            <select name="magnitude" class="drop-down" id="magnitude">
+          <input type="date" id="quakeDate" name="date">
 
             </select>
 
@@ -45,8 +37,10 @@
 
 
   <!-- The div that holds our map -->
-  <div id="mapid"></div>
-  <div id="mapid"></div>
+  <div id="mapid1"></div>
+  <div id="mapid2"></div>
+  <div id="mapid3"></div>
+  
 
   <!-- Leaflet JS -->
   <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
@@ -58,8 +52,8 @@
   <script type="text/javascript" src="config.js"></script>
   <!-- Our JavaScript -->
   <script type="text/javascript" src="past_quakes.js"></script>
+  <script type="text/javascript" src="predicted_quakes.js"></script>
   <script type="text/javascript" src="future_quakes.js"></script>
-  
 </body>
 
 </html>

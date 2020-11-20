@@ -3,11 +3,37 @@ body {
     margin: 0;
   }
   
-  #mapid,
+  #mapid1, #mapid2, #mapid3,
   body,
   html {
     height: 100%;
+    width: 100%;
+    top: 0%;
+    background-color: #020202;
   }
+
+  #mapid1 {
+    position: absolute;
+    width: 31%;
+    top: 6%;
+    left: 1%;
+  }
+
+  #mapid2 {
+    position: absolute;
+    width: 31%;
+    left: 33%;
+    top: 6%;
+  }
+
+  #mapid3 {
+    position: absolute;
+    width: 33%;
+    left: 65%;
+    top: 6%;
+  }
+
+  
   
   .legend {
     line-height: 20px;
@@ -57,7 +83,7 @@ nav ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: rgb(248, 242, 242);
+  background-color: rgb(10, 10, 10);
 }
 
 nav li {
@@ -66,14 +92,23 @@ nav li {
 
 nav li a, .dropbtn {
   display: inline-block;
-  color: rgb(248, 242, 242);
+  color: rgb(221, 22, 22);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
+nav li a, .interact {
+  display: inline-block;
+  color: rgb(17, 15, 15);
+  text-align: center;
+  background-color: #c50d0d;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
 nav li a:hover, .dropdown:hover .dropbtn {
-  background-color: #f5ecec;
+  background-color: #c50d0d;
   color:rgb(8, 7, 7);
 }
 
@@ -84,9 +119,9 @@ li.dropdown {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1e7e7;
+  background-color: #c50a0a;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgb(255, 255, 255);
+  box-shadow: 0px 8px 16px 0px rgb(204, 8, 8);
   z-index: 1;
 }
 
@@ -105,9 +140,9 @@ li.dropdown {
 }
 
 .alti-logo {
-  background-color: #efeff7;
-  color:rgb(12, 11, 11);
-  font-size: 24px;
+  background-color: #c91212;
+  color:rgb(11, 11, 11);
+  font-size: 25px;
 }
 
 .mini  {
