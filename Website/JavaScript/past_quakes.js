@@ -72,7 +72,7 @@ function refreshMap(){
 
 
   // Use this link to get the geojson data.
-  var link = `https://predictquake.herokuapp.com//api/v1.0/predict/${myDate}`;
+  var link = `https://predictquake.herokuapp.com//api/v1.0/past30days/${myDate}`;
 
   console.log(link)
   // Function that will determine the color based on the depth of an earthquake

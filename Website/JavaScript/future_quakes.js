@@ -72,7 +72,7 @@ function refreshMap(){
 
 
   // Use this link to get the geojson data.
-  var link = `https://predictquake.herokuapp.com//api/v1.0/predict/${myDate}`;
+  var link = `https://predictquake.herokuapp.com//api/v1.0/target/${myDate}`;
 
   console.log(link)
   // Function that will determine the color based on the depth of an earthquake
@@ -83,22 +83,22 @@ function refreshMap(){
   d3.json(link, function(data) {
   // Creating a GeoJSON layer with the retrieved data
   L.geoJson(data,{
-      pointToLayer: function(feature, coordinate){
+      pointToLayer: function(features, coordinate){
           return L.circleMarker(coordinate)
       },
-    style: function(feature) {
+    style: function(features) {
         return {
           color: "black",
           // Call the chooseColor function to decide which color to color the circles
-          fillColor: chooseColor(feature.properties.mag),
+          fillColor: chooseColor(features.properties.mag),
           fillOpacity: 0.5,
-          radius: (2 ** feature.properties.mag),
+          radius: (2 ** features.properties.mag),
           weight: 1.5
         };
     },
 
-    onEachFeature: function(feature, layer) {
-      layer.bindPopup("<h1>Magnitude: " + feature.properties.mag + "</h1> <hr> <h3>Location: " + feature.properties.place + "</h3>")
+    onEachFeature: function(features, layer) {
+      layer.bindPopup("<h1>Magnitude: " + features.properties.mag + "</h1> <hr> <h3>Location: " + features.properties.place + "</h3>")
     }
       
       
